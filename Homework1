@@ -1,0 +1,130 @@
+1. Try to anticipate what each one of these statements print:
+console.log("    ___\n   ('v')\n  ((   ))\n-/-\"---\"--\n"); // [ 1]
+      Guess: As shown in the first class, this produces a bird
+      Answer: This produces a bird
+console.log( Infinity + 3 );                                 // [ 2]
+      Guess: Infinity
+      Answer: Infinity becuase that is the logical progression
+
+console.log( typeof Infinity );                              // [ 3]
+      Guess: Number
+      Answer: number becuase infinity can be valued
+
+console.log( typeof 4.5 );                                   // [ 4]
+      Guess: Number
+      Answer: number becuase it is a number
+
+console.log( typeof 3 );                                     // [ 5]
+      Guess: Number
+      Answer: number because it is a number
+
+console.log( 3 / 0 );                                        // [ 6]
+      Guess: NaN
+      Answer: NaN because it is a number that cant be defined
+
+console.log( -3 / 0 );                                       // [ 7]
+      Guess: NaN
+      Answer: NaN because it is a number that cant be defined
+
+console.log( Infinity - Infinity );                          // [ 8]
+      Guess: 0
+      Answer: NaN because there can be different infinities 
+
+console.log( 0 / 0 );                                        // [ 9]
+      Guess: NaN
+      Answer: NaN because it is the same thing as 3/0
+
+console.log( typeof NaN );                                   // [10]
+      Guess: Number
+      Answer: Number because we did this in class and it needs to be valued
+
+console.log( Math.random() < 0.5 ? "heads" : "tails" );      // [11]
+      Guess: heads or tails
+      Answer: heads of tails because it is a 50% chance of either
+
+console.log( typeof undefined );                             // [12]
+      Guess: undefined
+      Answer: undefined becuase it does not need to be valued
+
+console.log( typeof null );                                  // [13]
+      Guess: NaN
+      Answer: object because it is nothing but needs to be stored
+
+console.log(8 * null);                                       // [14]
+      Guess: null
+      Answer: 0 becuase null counts as nothing
+
+console.log("5" - 1);                                        // [15]
+      Guess: NaN
+      Answer: 4 becuase the quotes don't change the outcome
+
+console.log("5" + 1);                                        // [16]
+      Guess: 6
+      Answer: 51 because adding with quotes puts the number next to it
+console.log("couch" * 2);                                    // [17]
+      Guess: NaN
+      Answer: NaN because you cant muliply strings
+
+console.log(false == 0);                                     // [18]
+      Guess: True
+      Answer: True because false does equal zero
+
+console.log(null == undefined);                              // [19]
+      Guess: False
+      Answer: True becuase they are the same
+
+console.log(null == 0);                                      // [20]
+      Guess: True
+      Answer: False because null is a different type of nothing
+
+console.log(undefined == 0);                                 // [21]
+      Guess: False
+      Answer: False becuase the same reason as before
+
+console.log(null || "user");                                 // [22]
+      Guess: User
+      Answer: User becuase it chooses the last true outcome
+
+console.log("Karl" || "user");                               // [23]
+      Guess: Karl
+      Answer: Karl becuase once it finds a true outcome, it stops
+
+console.log(undefined || "tomato");                          // [24]
+      Guess: tomato
+      Answer: tomato becuase once it finds a true outcome, it stops
+
+console.log("tomato" && "pasta");                            // [25]
+      Guess: tomato
+      Answer: pasta becuase or finds the last true outcome
+2. What does this code fragment do?
+
+      This picks two numbers between -50 & 50 and swaps what number goes to which variable
+var a = Math.floor(Math.random() * 100) - 50
+var b = Math.floor(Math.random() * 100) - 50
+console.log( a + " " + b )
+a = a + b
+b = a - b
+a = a - b
+console.log( a + " " + b )
+3. Try to anticipate what each one of these statements prints:
+-bash-4.2$ cat seven.js
+      Guess: opens a folder nambed cat
+      Answer: invalid token becuase there is nothing to define
+console.log( new Number("32") + 6 );
+      Guess: 38
+      Answer: 38 becuase the string is being converted into a number
+ console.log( isNaN(3/0) );
+      Guess: NaN
+      Answer: false becuase you cant test a NaN
+ console.log("sunderland".charAt(3));
+      Guess: sun
+      Answer: d becuase it takes the character after the first 3
+ console.log("sunderland".charAt("sunderland".length-1));
+      Guess: n
+      Answer: d because it takes the last character
+ console.log("sunderland".substring(1, 6));
+      Guess: sunder
+      Answer: under becuase the first letter counts as zero
+ console.log("sunderland".substring(6)); -bash-4.2$
+      Guess: land 
+      Answer: land because it captures what is after 6
